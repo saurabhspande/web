@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const express = require("express");
 const { builtinModules } = require("module");
 const app = express();
-dotenv.config({path:"./config.env"})
+dotenv.config({path:"./config.js"})
 
 
 
