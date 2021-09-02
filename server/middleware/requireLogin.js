@@ -3,8 +3,8 @@ const jwt = require("jsonwebtoken")
 const mongoose = require('mongoose')
 const User = mongoose.model("USER")
 
-dotenv.config({ path: "./config" })
-
+// dotenv.config({ path: "./config" })
+require("../config/keys")
 module.exports = (req, res, next) => {
 
     const { authorization } = req.headers

@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
-const DB = process.env.DATABASE;
-mongoose.connect(DB,{
+// const DB = process.env.DATABASE;
+const {DATABASE} = require("../config/keys")
+mongoose.connect(DATABASE,{
     useNewUrlParser:true,
     useCreateIndex:true,
     useUnifiedTopology:true,
